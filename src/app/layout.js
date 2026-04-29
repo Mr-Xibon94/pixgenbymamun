@@ -23,7 +23,9 @@ export default function RootLayout({ children }) {
     >
       <body>
         <Navbar/>
-        {children}
+        <main className="container m-auto my-10">
+          {children}
+        </main>
         <Footer></Footer>
         </body>
     </html>
