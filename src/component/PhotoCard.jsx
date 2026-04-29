@@ -1,10 +1,19 @@
+import { Card } from "@heroui/react";
+import Image from "next/image";
 
 
 const PhotoCard = ({photo}) => {
     return (
-        <div>
-            {photo.title}
-        </div>
+        <Card>
+            <div>
+                <Image
+                src={photo.imageUrl}
+                height={200}
+                width={200}
+                alt={photo.title}
+                />
+            </div>
+        </Card>
     );
 };
 
