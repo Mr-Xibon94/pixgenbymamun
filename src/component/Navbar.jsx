@@ -5,8 +5,8 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="border-b px-2">
-      <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
-        <div className="flex gap-2 items-center">
+      <nav className=" flex sm:flex-col sm:space-y-2.5 md:flex-row  lg:flex-row justify-between items-center  py-3 max-w-7xl mx-auto w-full">
+        <div className="flex gap-2  items-center">
           <Image
             src={"/logo.png"}
             alt="logo"
@@ -33,8 +33,8 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="flex gap-4">
-          <ul className="flex items-center  text-sm">
+        <div className="">
+          <ul className="flex items-center gap-4 text-sm">
             <li>
               <Link href={"/signup"}>SignUp</Link>
             </li>
