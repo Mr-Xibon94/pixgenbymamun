@@ -19,13 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${outfitFonts.className}  h-full antialiased`}
+      
     >
-      <body>
+      <body className={`${outfitFonts.className}  h-full antialiased`}>
         <Navbar/>
-        <main className="container m-auto my-10">
+        <div className="container m-auto my-10">
           {children}
-        </main>
+        </div>
         <Footer></Footer>
         </body>
     </html>
