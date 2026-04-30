@@ -19,15 +19,13 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      
+      suppressHydrationWarning
     >
-      <body className={`${outfitFonts.className}  h-full antialiased`}>
-        <Navbar/>
-        <div className="container m-auto my-10">
-          {children}
-        </div>
+      <body>
+        <Navbar />
+        {children}
         <Footer></Footer>
-        </body>
+      </body>
     </html>
   );
 }
