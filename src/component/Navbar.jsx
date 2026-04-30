@@ -39,7 +39,7 @@ const Navbar = () => {
               <Link href={"/SignUp"}>SignUp</Link>
             </li>
             <li>
-              <Link href={"/signin"}>SignIn</Link>
+              <Link href={"/SignIn"}>SignIn</Link>
             </li>
           </ul>
         </div>
